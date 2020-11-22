@@ -3,12 +3,13 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
 const multer = require('multer');
+const { graphqlHTTP } = require('express-graphql');
+
+const graphqlSchema = require('./graphql/schema');
+const graphqlResolver = require('./graphql/resolvers');
 
 const MONGODB_URI =
   'mongodb+srv://oksana:lhz13YDaxSXm5LJR@cluster0.hymvn.mongodb.net/messages? w=majority';
-
-const feedRoutes = require('./routes/feed');
-const authRoutes = require('./routes/auth');
 
 const app = express();
 
@@ -49,8 +50,14 @@ app.use((req, res, next) => {
   next();
 }); //CORS errors, second header - domain *-any
 
-app.use('/feed', feedRoutes);
-app.use('/auth', authRoutes);
+app.use(
+  '/graphql',
+  graphqlHTTP({
+    schema: graphqlSchema,
+    rootValue: graphqlResolver,
+    graphiql: true,
+  }),
+);
 
 app.use((error, req, res, next) => {
   console.log(error);
@@ -66,11 +73,6 @@ mongoose
     useUnifiedTopology: true,
   })
   .then((result) => {
-    const server = app.listen(8080);
-    const io = require('./socket').init(server);
-    io.on('connection', (socket) => {
-      //socket - for connect new clients
-      console.log('Client connected');
-    });
+    app.listen(8080);
   })
   .catch((err) => console.log(err));
