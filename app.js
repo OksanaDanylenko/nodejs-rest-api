@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
+const { clearImage } = require('./util/file');
+
 const multer = require('multer');
 const { graphqlHTTP } = require('express-graphql');
 
@@ -55,6 +57,21 @@ app.use((req, res, next) => {
 }); //CORS errors, second header - domain *-any
 
 app.use(auth); //check is auth
+
+app.put('/post-image', (req, res, next) => {
+  if (!req.isAuth) {
+    throw new Error('Not Auth');
+  }
+  if (!req.file) {
+    return res.status(200).json({ message: 'No file provided' });
+  }
+  if (req.body.oldPath) {
+    clearImage(req.body.oldPath);
+  }
+  return res
+    .status(201)
+    .json({ message: 'File stored', filePath: req.file.path });
+});
 
 app.use(
   '/graphql',
