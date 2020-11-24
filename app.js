@@ -7,6 +7,7 @@ const { graphqlHTTP } = require('express-graphql');
 
 const graphqlSchema = require('./graphql/schema');
 const graphqlResolver = require('./graphql/resolvers');
+const auth = require('./middelware/auth');
 
 const MONGODB_URI =
   'mongodb+srv://oksana:lhz13YDaxSXm5LJR@cluster0.hymvn.mongodb.net/messages? w=majority';
@@ -47,8 +48,13 @@ app.use((req, res, next) => {
     'GET, POST, PUT, PATCH, DELETE',
   );
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(200);
+  }
   next();
 }); //CORS errors, second header - domain *-any
+
+app.use(auth); //check is auth
 
 app.use(
   '/graphql',
@@ -56,6 +62,15 @@ app.use(
     schema: graphqlSchema,
     rootValue: graphqlResolver,
     graphiql: true,
+    formatError(err) {
+      if (!err.originalError) {
+        return err;
+      }
+      const data = err.originalError.data;
+      const message = err.message || 'An error occured';
+      const code = err.originalError.code || 500;
+      return { message: message, status: code, data: data };
+    },
   }),
 );
 

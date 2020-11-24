@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bdf932e-3711-4cab-9fa4-8a5d46cdb0b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/graphql/resolvers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphql/schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/resolvers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middelware/is-auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middelware/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/feed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <workItem from="1603192143514" duration="549000" />
       <workItem from="1603988644361" duration="577000" />
       <workItem from="1605798147768" duration="2336000" />
-      <workItem from="1606055627834" duration="8869000" />
+      <workItem from="1606055627834" duration="20484000" />
     </task>
     <servers />
   </component>
@@ -124,25 +121,25 @@
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
     <state x="-1280" y="1109" width="1280" height="600" key="DiffContextDialog/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606057341948" />
-    <state width="1259" height="101" key="GridCell.Tab.0.bottom" timestamp="1606078688834">
+    <state width="1259" height="295" key="GridCell.Tab.0.bottom" timestamp="1606201036370">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="101" key="GridCell.Tab.0.bottom/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606078688834" />
+    <state width="1259" height="295" key="GridCell.Tab.0.bottom/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606201036370" />
     <state width="1899" height="271" key="GridCell.Tab.0.bottom/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638844" />
-    <state width="1259" height="101" key="GridCell.Tab.0.center" timestamp="1606078688833">
+    <state width="1259" height="295" key="GridCell.Tab.0.center" timestamp="1606201036368">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="101" key="GridCell.Tab.0.center/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606078688833" />
+    <state width="1259" height="295" key="GridCell.Tab.0.center/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606201036368" />
     <state width="1899" height="271" key="GridCell.Tab.0.center/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638843" />
-    <state width="1259" height="101" key="GridCell.Tab.0.left" timestamp="1606078688832">
+    <state width="1259" height="295" key="GridCell.Tab.0.left" timestamp="1606201036367">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="101" key="GridCell.Tab.0.left/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606078688832" />
+    <state width="1259" height="295" key="GridCell.Tab.0.left/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606201036367" />
     <state width="1899" height="271" key="GridCell.Tab.0.left/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638842" />
-    <state width="1259" height="101" key="GridCell.Tab.0.right" timestamp="1606078688834">
+    <state width="1259" height="295" key="GridCell.Tab.0.right" timestamp="1606201036368">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="101" key="GridCell.Tab.0.right/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606078688834" />
+    <state width="1259" height="295" key="GridCell.Tab.0.right/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606201036368" />
     <state width="1899" height="271" key="GridCell.Tab.0.right/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638843" />
     <state x="469" y="162" key="SettingsEditor" timestamp="1601989429837">
       <screen x="0" y="23" width="1920" height="1000" />
@@ -152,10 +149,26 @@
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
     <state x="-1017" y="1023" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606059649170" />
-    <state x="-835" y="1213" width="567" height="522" key="find.popup" timestamp="1606073983264">
+    <state x="-835" y="1213" width="567" height="522" key="find.popup" timestamp="1606207388555">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state x="-835" y="1213" width="567" height="522" key="find.popup/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606073983264" />
+    <state x="-835" y="1213" width="567" height="522" key="find.popup/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606207388555" />
     <state x="667" y="278" width="586" height="490" key="find.popup/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602588935640" />
+    <state x="-975" y="1133" width="670" height="676" key="search.everywhere.popup" timestamp="1606202941766">
+      <screen x="-1280" y="1009" width="1280" height="800" />
+    </state>
+    <state x="-975" y="1133" width="670" height="676" key="search.everywhere.popup/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606202941766" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$USER_HOME$/Downloads/04-backend-adding-login-functionality/graphql/resolvers.js</url>
+          <line>25</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
