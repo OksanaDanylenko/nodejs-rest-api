@@ -172,7 +172,7 @@ module.exports = {
       error.code = 404;
       throw error;
     }
-    if (post.creator._id.toString() === req.userId.toString()) {
+    if (post.creator._id.toString() !== req.userId.toString()) {
       const error = new Error('Not Authorized');
       error.code = 403;
       throw error;
