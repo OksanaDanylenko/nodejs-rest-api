@@ -72,7 +72,7 @@ exports.login = async (req, res, next) => {
   }
 };
 
-exports.getUserStatus = (req, res, next) => {
+exports.getUserStatus = async (req, res, next) => {
   try {
     const user = User.findById(req.userId);
     if (!user) {

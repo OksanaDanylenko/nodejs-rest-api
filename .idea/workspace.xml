@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bdf932e-3711-4cab-9fa4-8a5d46cdb0b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/socket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/auth-controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/feed-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -25,7 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iVAn4fc1PExOQfizNhLScM1gFI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -51,14 +53,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.test">
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,8 +82,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.lint" />
       </list>
@@ -106,6 +120,7 @@
       <workItem from="1603988644361" duration="577000" />
       <workItem from="1605798147768" duration="2336000" />
       <workItem from="1606055627834" duration="6884000" />
+      <workItem from="1606645921912" duration="3144000" />
     </task>
     <servers />
   </component>
@@ -121,25 +136,29 @@
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
     <state x="-1280" y="1109" width="1280" height="600" key="DiffContextDialog/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606057341948" />
-    <state width="1259" height="177" key="GridCell.Tab.0.bottom" timestamp="1606073987747">
+    <state width="1259" height="173" key="GridCell.Tab.0.bottom" timestamp="1606652851853">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.bottom/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606073987747" />
+    <state width="1259" height="173" key="GridCell.Tab.0.bottom/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606652851853" />
+    <state width="1419" height="225" key="GridCell.Tab.0.bottom/-1440.590.1440.900/0.25.1920.986@-1440.590.1440.900" timestamp="1606491575490" />
     <state width="1899" height="271" key="GridCell.Tab.0.bottom/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638844" />
-    <state width="1259" height="177" key="GridCell.Tab.0.center" timestamp="1606073987746">
+    <state width="1259" height="173" key="GridCell.Tab.0.center" timestamp="1606652851852">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.center/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606073987746" />
+    <state width="1259" height="173" key="GridCell.Tab.0.center/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606652851852" />
+    <state width="1419" height="225" key="GridCell.Tab.0.center/-1440.590.1440.900/0.25.1920.986@-1440.590.1440.900" timestamp="1606491575489" />
     <state width="1899" height="271" key="GridCell.Tab.0.center/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638843" />
-    <state width="1259" height="177" key="GridCell.Tab.0.left" timestamp="1606073987745">
+    <state width="1259" height="173" key="GridCell.Tab.0.left" timestamp="1606652851852">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.left/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606073987745" />
+    <state width="1259" height="173" key="GridCell.Tab.0.left/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606652851852" />
+    <state width="1419" height="225" key="GridCell.Tab.0.left/-1440.590.1440.900/0.25.1920.986@-1440.590.1440.900" timestamp="1606491575488" />
     <state width="1899" height="271" key="GridCell.Tab.0.left/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638842" />
-    <state width="1259" height="177" key="GridCell.Tab.0.right" timestamp="1606073987746">
+    <state width="1259" height="173" key="GridCell.Tab.0.right" timestamp="1606652851853">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state width="1259" height="177" key="GridCell.Tab.0.right/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606073987746" />
+    <state width="1259" height="173" key="GridCell.Tab.0.right/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606652851853" />
+    <state width="1419" height="225" key="GridCell.Tab.0.right/-1440.590.1440.900/0.25.1920.986@-1440.590.1440.900" timestamp="1606491575490" />
     <state width="1899" height="271" key="GridCell.Tab.0.right/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602587638843" />
     <state x="469" y="162" key="SettingsEditor" timestamp="1601989429837">
       <screen x="0" y="23" width="1920" height="1000" />
@@ -149,10 +168,11 @@
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
     <state x="-1017" y="1023" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606059649170" />
-    <state x="-835" y="1213" width="567" height="522" key="find.popup" timestamp="1606073983264">
+    <state x="-835" y="1213" width="567" height="522" key="find.popup" timestamp="1606652024900">
       <screen x="-1280" y="1009" width="1280" height="800" />
     </state>
-    <state x="-835" y="1213" width="567" height="522" key="find.popup/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606073983264" />
+    <state x="-835" y="1213" width="567" height="522" key="find.popup/-1280.1009.1280.800/0.25.2560.1346@-1280.1009.1280.800" timestamp="1606652024900" />
+    <state x="-939" y="820" width="638" height="588" key="find.popup/-1440.590.1440.900/0.25.1920.986@-1440.590.1440.900" timestamp="1606486443954" />
     <state x="667" y="278" width="586" height="490" key="find.popup/-1440.613.1440.877/0.23.1920.1000@0.23.1920.1000" timestamp="1602588935640" />
   </component>
 </project>
